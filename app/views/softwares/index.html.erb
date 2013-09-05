@@ -1,0 +1,27 @@
+<h1>Listing softwares</h1>
+
+<table class="components">
+  <tr>
+    <th>Maker</th>
+    <th>Sw name</th>
+    <th>Version</th>
+    <th>Eos date</th>
+    <th colspan="3">action</th>
+  </tr>
+
+<% @softwares.each do |software| %>
+  <tr>
+    <td><%= software.maker %></td>
+    <td><%= software.sw_name %></td>
+    <td><%= software.version %></td>
+    <td><%= software.eos_date %></td>
+    <td><%= link_to 'Show', software %></td>
+    <td><%= link_to 'Edit', edit_software_path(software) %></td>
+    <td><%= link_to 'Destroy', software, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Software', new_software_path %>

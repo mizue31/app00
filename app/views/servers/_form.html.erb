@@ -1,0 +1,33 @@
+<%= form_for(@server) do |f| %>
+  <% if @server.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@server.errors.count, "error") %> prohibited this server from being saved:</h2>
+
+      <ul>
+      <% @server.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :host_name %><br />
+    <%= f.text_field :host_name %><br />
+    <%= f.label :os, 'Physical or Virtual' %><br />
+    <%= f.text_field :p_or_v %><br />
+    <%= f.label :os, 'Operating System' %><br />
+    <%= f.text_field :os %>
+  </div>
+  <dl>
+    <div id="server_software">
+    <%= f.fields_for :server_softwares do |ss| %>
+      <%= render 'fields_server_software', :f=> ss %>
+    <% end %>
+    </div>
+    <p><%= link_to_add_fields 'Add Software', f, :server_softwares %></p>
+  </dl>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

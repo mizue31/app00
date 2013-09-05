@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<dl>
+<dt>
+<p>
+  <b>ComponentName:</b>
+  <%= @component.name %>
+</p>
+</dt>
+<p>
+  <% @component.servers.each do |s| %>
+  <dd>
+  <%= render "server", :server=> s %>
+  </dd>
+  <% end %>
+</p>
+</dl>
+
+<%= link_to 'Edit', edit_component_path(@component) %> |
+<%= link_to 'Back', components_path %>

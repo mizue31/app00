@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  maker: MyString
+  sw_name: MyString
+  version: MyString
+  eos_date: 2013-09-05
+
+two:
+  maker: MyString
+  sw_name: MyString
+  version: MyString
+  eos_date: 2013-09-05

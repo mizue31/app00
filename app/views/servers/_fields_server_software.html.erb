@@ -1,0 +1,6 @@
+  <dd class='fields'>
+      <%= f.label :ss, 'software:' %>
+      <%= f.hidden_field :id %>
+      <%= f.select(:software_id, options_for_select([['---', nil]] + Software.all.map{|s|["#{s.sw_name} - #{s.version}", s.id]}, f.object.software_id)) %>
+      <%= link_to_remove_fields 'Remove Software', f %>
+  </dd>

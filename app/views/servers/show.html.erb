@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>ServerName:</b>
+  <%= @server.host_name %>
+</p>
+  
+<p>
+  <table class='show_component'>
+  <th colspan='2'>Server Information</th>
+  <tr>
+  <td>HostName</td>
+  <td>
+  <%= @server.host_name %>
+  </td>
+  </tr>
+  <tr>
+  <td>P/V</td>
+  <td>
+  <%= @server.p_or_v %>
+  </td>
+  </tr>
+  <tr>
+  <td>OS</td>
+  <td>
+  <%= @server.os %>
+  </td>
+  </tr>
+  <tr></tr>
+  <tr>
+  <th colspan='2'>Installed Software</th>
+  </tr>
+  <% @server.softwares.each do |sw| %>
+  <tr></tr>
+  <tr>
+    <td>Maker</td>
+    <td>
+    <%= sw.maker %>
+    </td>
+  </tr>
+  <tr>
+    <td>SoftwareName</td>
+    <td>
+    <%= sw.sw_name %>
+    </td>
+  </tr>
+  <tr>
+    <td>Version</td>
+    <td>
+    <%= sw.version %>
+    </td>
+  </tr>
+  <tr>
+    <td>EOS</td>
+    <td>
+    <%= sw.eos_date %>
+    </td>
+  </tr>
+  <% end %>
+  </table>
+</p>
+
+<%= link_to 'Edit', edit_server_path(@server) %> |
+<%= link_to 'Back', servers_path %>

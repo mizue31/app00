@@ -1,0 +1,6 @@
+  <dd class='fields'>
+      <%= f.label :cs, 'host_name:' %>
+      <%= f.hidden_field :id %>
+      <%= f.select(:server_id, options_for_select([['---', nil]] + Server.all.map{|s|[s.host_name, s.id]}, f.object.server_id)) %>
+      <%= link_to_remove_fields 'Remove Host', f %>
+  </dd>

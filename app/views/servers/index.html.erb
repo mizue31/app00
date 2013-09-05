@@ -1,0 +1,21 @@
+<h1>Listing servers</h1>
+
+<table class='components'>
+  <tr>
+    <th>Name</th>
+    <th colspan=3>action</th>
+  </tr>
+
+<% @servers.each do |server| %>
+  <tr>
+    <td><%= server.host_name %></td>
+    <td><%= link_to 'Show', server %></td>
+    <td><%= link_to 'Edit', edit_server_path(server) %></td>
+    <td><%= link_to 'Destroy', server, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Server', new_server_path %>
