@@ -8,8 +8,9 @@ gem 'rails', '3.2.13'
 gem 'sqlite3', groups: %w(test development), require:false
 #gem 'pg', groups: %w(production), require:false
 
-gem 'mysql2'
-gem 'exejs'
+# for MOGOK
+gem 'mysql2', groups: %w(production), require:false
+gem 'therubyracer', groups: %w(production), require:false
 
 # Gems used only for assets and not required
 # in production environments by default.
