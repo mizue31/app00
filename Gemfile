@@ -6,10 +6,10 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # for Development
-#gem 'sqlite3', groups: %w(test development), require:false
+gem 'sqlite3', groups: %w(test development), require:false
 
 # for Heroku
-gem 'pg', groups: %w(production), require:false
+#gem 'pg', groups: %w(production), require:false
 
 # for MOGOK
 #gem 'mysql2', groups: %w(production), require:false

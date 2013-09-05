@@ -11,23 +11,40 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <table class="components">
+  <tr>
+    <td>
     <%= f.label :host_name %><br />
+    </td>
+    <td>
     <%= f.text_field :host_name %><br />
+    </td>
+  </tr>
+  <tr>
+    <td>
     <%= f.label :os, 'Physical or Virtual' %><br />
+    </td>
+    <td>
     <%= f.text_field :p_or_v %><br />
+    </td>
+  </tr>
+  <tr>
+    <td>
     <%= f.label :os, 'Operating System' %><br />
+    </td>
+    <td>
     <%= f.text_field :os %>
-  </div>
-  <dl>
-    <div id="server_software">
+    </td>
+  </tr>
+  </table>
+  <br />
+  <div id="server_software">
     <%= f.fields_for :server_softwares do |ss| %>
       <%= render 'fields_server_software', :f=> ss %>
     <% end %>
-    </div>
     <p><%= link_to_add_fields 'Add Software', f, :server_softwares %></p>
-  </dl>
-  <div class="actions">
-    <%= f.submit %>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
   </div>
 <% end %>

@@ -11,21 +11,24 @@
     </div>
   <% end %>
 
-  <dl>
-    <div class="field">
+  <table class="components">
+  <tr>
+    <td>
       <%= f.label :name, 'Component Name' %><br />
+    </td>
+    <td>
       <%= f.text_field :name %>
-    </div>
-  </dl>
-  <dl>
-    <div id="component_server">
+    </td>
+  </tr>
+  </table>
+  <br />
+  <div id="component_server">
     <%= f.fields_for :component_servers do |cs| %>
       <%= render 'fields_component_server', :f=> cs %>
     <% end %>
-    </div>
     <p><%= link_to_add_fields 'Add Host', f, :component_servers %></p>
-  </dl>
-  <div class="actions">
+    <div class="actions">
       <%= f.submit %>
+    </div>
   </div>
 <% end %>

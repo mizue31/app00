@@ -11,23 +11,44 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :maker %><br />
-    <%= f.text_field :maker %>
-  </div>
-  <div class="field">
+  <table class="components">
+  <tr>
+    <td>
+      <%= f.label :maker %><br />
+    </td>
+    <td>
+      <%= f.text_field :maker %>
+    </td>
+  </tr>
+  <tr>
+    <td>
     <%= f.label :sw_name %><br />
+    </td>
+    <td>
     <%= f.text_field :sw_name %>
-  </div>
-  <div class="field">
+    </td>
+  </tr>
+  <tr>
+    <td>
     <%= f.label :version %><br />
+    </td>
+    <td>
     <%= f.text_field :version %>
-  </div>
-  <div class="field">
+    </td>
+  </tr>
+  <tr>
+    <td>
     <%= f.label :eos_date %><br />
+    </td>
+    <td>
     <%= f.date_select :eos_date %>
-  </div>
+    </td>
+  </tr>
+  </table>
+  <br />
+  <div id="component_server">
   <div class="actions">
     <%= f.submit %>
+  </div>
   </div>
 <% end %>

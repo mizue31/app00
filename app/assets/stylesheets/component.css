@@ -54,3 +54,9 @@ table.show_component td {
     font-size: 8pt;
 }
 
+div#component_server {
+    text-align: center;
+}
+div#server_software {
+    text-align: center;
+}
