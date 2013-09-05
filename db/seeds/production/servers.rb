@@ -1,0 +1,5 @@
+Server.create(:id=>1, :host_name => 'host1', :p_or_v => 'virtual', :os => 'MS Windows Server2008R2')
+Server.create(:id=>2, :host_name => 'host2', :p_or_v => 'virtual', :os => 'MS Windows Server2003')
+Server.create(:id=>3, :host_name => 'host3', :p_or_v => 'virtual', :os => 'RHEL')
+Server.create(:id=>4, :host_name => 'host4', :p_or_v => 'virtual', :os => 'RHEL')
+Server.create(:id=>5, :host_name => 'host5', :p_or_v => 'physical', :os => 'MS Windows NT Server')

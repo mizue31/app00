@@ -1,0 +1,5 @@
+Component.create(:id=>1, :name => "Component-1")
+Component.create(:id=>2, :name => "Component-2")
+Component.create(:id=>3, :name => "Component-3")
+Component.create(:id=>4, :name => "Component-4")
+Component.create(:id=>5, :name => "Component-5")
