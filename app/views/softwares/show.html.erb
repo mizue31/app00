@@ -1,25 +1,45 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Maker:</b>
+<table class="components">
+<tr>
+<td>
+  <b>Maker</b>
+</td>
+<td>
   <%= @software.maker %>
-</p>
+</td>
+</tr>
 
-<p>
-  <b>Sw name:</b>
+<tr>
+<td>
+  <b>Sw name</b>
+</td>
+<td>
   <%= @software.sw_name %>
-</p>
+</td>
+</tr>
 
-<p>
-  <b>Version:</b>
+<tr>
+<td>
+  <b>Version</b>
+</td>
+<td>
   <%= @software.version %>
-</p>
+</td>
+</tr>
 
-<p>
-  <b>Eos date:</b>
+<tr>
+<td>
+  <b>Eos date</b>
+</td>
+<td>
   <%= @software.eos_date %>
-</p>
+</td>
+</tr>
+</table>
+<br />
 
-
+<div id="foot_menu">
 <%= link_to 'Edit', edit_software_path(@software) %> |
 <%= link_to 'Back', softwares_path %>
+</div>

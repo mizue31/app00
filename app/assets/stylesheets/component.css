@@ -19,7 +19,7 @@ table.components tr {
 }
 
 table.components td {  
-    background-color: firebrick;
+    background-color: indianred;
     padding: 1px;
     color: white;
     text-align: center;
@@ -47,7 +47,7 @@ table.show_component tr {
 }
 
 table.show_component td {  
-    background-color: firebrick;
+    background-color: indianred;
     padding: 1px;
     color: white;
     text-align: center;
@@ -58,5 +58,11 @@ div#component_server {
     text-align: center;
 }
 div#server_software {
+    text-align: center;
+}
+div#title {
+    text-align: center;
+}
+div#foot_menu {
     text-align: center;
 }
