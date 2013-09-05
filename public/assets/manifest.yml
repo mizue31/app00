@@ -1,9 +1,9 @@
 ---
-rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
-rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
-application.js: application-7f32e1bb73ec4d9e956e104dd8d54354.js
-application/index.js: application-7f32e1bb73ec4d9e956e104dd8d54354.js
-application.css: application-fa108e7144fe6d1f06ad5825e9a77436.css
-application/index.css: application-fa108e7144fe6d1f06ad5825e9a77436.css
-jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
-jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
+rails.png: rails.png
+rails/index.png: rails.png
+application.js: application.js
+application/index.js: application.js
+application.css: application.css
+application/index.css: application.css
+jquery.min.map: jquery.min.map
+jquery/index.min.map: jquery.min.map
