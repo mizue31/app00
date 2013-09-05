@@ -1,4 +1,4 @@
-Comp::Application.routes.draw do
+App00::Application.routes.draw do
   resources :softwares
 
 
