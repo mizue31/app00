@@ -1,0 +1,5 @@
+Service.create(:id=>1, :name => "Service-1")
+Service.create(:id=>2, :name => "Service-2")
+Service.create(:id=>3, :name => "Service-3")
+Service.create(:id=>4, :name => "Service-4")
+Service.create(:id=>5, :name => "Service-5")

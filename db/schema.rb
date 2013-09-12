@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130905012103) do
+ActiveRecord::Schema.define(:version => 20130907001645) do
 
   create_table "component_servers", :force => true do |t|
     t.integer  "component_id"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20130905012103) do
 
   create_table "components", :force => true do |t|
     t.string   "name"
+    t.string   "domain"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -54,10 +55,16 @@ ActiveRecord::Schema.define(:version => 20130905012103) do
     t.datetime "updated_at",   :null => false
   end
 
+  add_index "service_components", ["component_id"], :name => "index_service_components_on_component_id"
+  add_index "service_components", ["service_id"], :name => "index_service_components_on_service_id"
+
   create_table "services", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "sid"
+    t.string   "code"
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "softwares", :force => true do |t|

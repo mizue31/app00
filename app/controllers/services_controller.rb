@@ -2,11 +2,7 @@ class ServicesController < ApplicationController
   # GET /services
   # GET /services.json
   def index
-    @services = Service.all
-
-#    @services = [
-#      {:id => 1, :name => 'service1'}
-#    ]
+    @services   = Service.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -29,6 +25,9 @@ class ServicesController < ApplicationController
   # GET /services/new.json
   def new
     @service = Service.new
+
+    # added for nested data
+    @service.service_components.build
 
     respond_to do |format|
       format.html # new.html.erb
@@ -84,4 +83,6 @@ class ServicesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 end
+

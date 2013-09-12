@@ -6,14 +6,14 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # for local Development
-#gem 'sqlite3', groups: %w(test development), require:false
+gem 'sqlite3', groups: %w(test development), require:false
 
 # for Heroku
 #gem 'pg', groups: %w(production), require:false
 
 # for MOGOK
-gem 'mysql2', groups: %w(production), require:false
-gem 'therubyracer', groups: %w(production), require:false
+#gem 'mysql2', groups: %w(production), require:false
+#gem 'therubyracer', groups: %w(production), require:false
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -25,6 +25,10 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+
+  # added for dynatree
+  gem 'jquery-ui-rails'
+  gem 'dynatree-rails'
 end
 
 gem 'jquery-rails'

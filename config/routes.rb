@@ -19,6 +19,13 @@ App00::Application.routes.draw do
 
   resources :services
 
+  resources :search do
+    collection do
+      post :exec_search
+    end
+  end
+
+  resources :search
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

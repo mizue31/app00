@@ -1,0 +1,6 @@
+  <dd class='fields'>
+      <%= f.label :sc, 'component name:' %>
+      <%= f.hidden_field :id %>
+      <%= f.select(:component_id, options_for_select([['---', nil]] + Component.all.map{|c|[c.name, c.id]}, f.object.component_id)) %>
+      <%= link_to_remove_fields 'Remove Component', f %>
+  </dd>

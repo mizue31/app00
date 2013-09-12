@@ -1,0 +1,5 @@
+Service.create(:id=>1, :name => "Service-1", :sid=> "0001", :code => "AA", :description=>"descriptin for service1")
+Service.create(:id=>2, :name => "Service-2", :sid=> "0002", :code => "BB", :description=>"description for service2")
+Service.create(:id=>3, :name => "Service-3", :sid=> "0003", :code => "CC", :description=>"description for service3")
+Service.create(:id=>4, :name => "Service-4", :sid=> "0004", :code => "DD", :description=>"description for service4")
+Service.create(:id=>5, :name => "Service-5", :sid=> "0005", :code => "EE", :description=>"description for service5")

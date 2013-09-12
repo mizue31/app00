@@ -5,6 +5,14 @@
   <%= @service.name %>
 </p>
 
+<div class="ctree">
+<% @service.components.each do |c| %>
+  <%= render "component", :component=> c %>
+<% end %>
+</div>
 
+
+<div id="foot_menu">
 <%= link_to 'Edit', edit_service_path(@service) %> |
 <%= link_to 'Back', services_path %>
+</div>

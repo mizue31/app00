@@ -1,0 +1,48 @@
+<div id="title">
+<h1>Search Result</h1>
+</div>
+
+Service Name:
+<%= @search.name %>
+<br />
+Service ID:
+<%= @search.sid %>
+<br />
+System Code:
+<%= @search.code %>
+<br />
+Description:
+<%= @search.description %>
+<br />
+
+<div id="ctree">
+<ul>
+<% @search.components.each do |c| %>
+  <li id="key<%= c.id %>" class="folder">
+    <%= c.name %>
+    <ul>
+    <li>
+    Domain: <%= c.domain %>
+    </li>
+    <% c.servers.each do |s| %>
+      <li id="key<%= s.id %>" class="folder">
+        <%= s.host_name %>
+        <ul>
+        <% s.softwares.each do |sw| %>
+          <li id="key<%= sw.id %>">
+            <%= sw.sw_name %>
+          </li>
+        <% end %>
+        </ul>
+      </li>
+    <% end %>
+    </ul>
+  </li>
+<% end %>
+</ul>
+</div>
+
+<div id="foot_menu">
+<%= link_to 'Back', search_index_path %>
+</div>
+

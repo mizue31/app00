@@ -20,6 +20,14 @@
       <%= f.text_field :name %>
     </td>
   </tr>
+  <tr>
+    <td>
+      <%= f.label :domain, 'Domain Name' %><br />
+    </td>
+    <td>
+      <%= select_tag :domain, options_for_select( {"---Select Domain---"=>"TechnicalDomain", "ApplicationServices"=>"ApplicationServices", "Distributed"=>"Distributed","Mainframe"=>"Mainframe","Networks"=>"Networks","Workplaces"=>"Workplaces"}, :selected => @component.domain) %>
+    </td>
+  </tr>
   </table>
   <br />
   <div id="component_server">

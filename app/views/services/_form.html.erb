@@ -11,11 +11,24 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <table class="components">
+  <tr>
+    <td>
+      <%= f.label :name %><br />
+    </td>
+    <td>
+      <%= f.text_field :name %>
+    </td>
+  </tr>
+  </table>
+  <br />
+
+  <div id="component_server">
+    <%= f.fields_for :service_components do |sc| %>
+      <%= render 'fields_service_component', :f => sc %>
+    <% end %>
+    <p><%= link_to_add_fields 'Add Component', f, :service_components %></p>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
 <% end %>
