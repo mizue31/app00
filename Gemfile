@@ -14,8 +14,8 @@ gem 'rails', '3.2.13'
 # for MOGOK
 gem 'mysql2', groups: %w(production), require:false
 gem 'therubyracer', groups: %w(production), require:false
-#gem 'jquery-ui-rails'
-#gem 'dynatree-rails'
+gem 'jquery-ui-rails'
+gem 'dynatree-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -29,8 +29,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 
   # added for dynatree
-  gem 'jquery-ui-rails'
-  gem 'dynatree-rails'
+  #gem 'jquery-ui-rails'
+  #gem 'dynatree-rails'
 end
 
 gem 'jquery-rails'
