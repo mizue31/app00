@@ -14,7 +14,6 @@ gem 'rails', '3.2.13'
 # for MOGOK
 gem 'mysql2', groups: %w(production), require:false
 gem 'therubyracer', groups: %w(production), require:false
-
 gem 'jquery-ui-rails'
 gem 'dynatree-rails'
 
