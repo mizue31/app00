@@ -11,11 +11,11 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery.ui.all
 //= require jquery_ujs
+//= require dynatree/jquery.dynatree
 //= require_tree .
 
-//= require jquery.ui.all
-//= require dynatree/jquery.dynatree
 
 // application_jquery.js
 function remove_fields(link) {
