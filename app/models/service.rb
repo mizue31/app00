@@ -35,4 +35,12 @@ class Service < ActiveRecord::Base
     csv_data.encode(Encoding::SJIS)
   end
 
+  def self.import(file)
+    CSV.foreach(file.path, {quote_char: '"', headers: true}) do |row|
+      service = find_by_id(row["id"]) || new
+      service.attributes = row.to_hash.slice(*accessible_attributes)
+      service.save!
+    end
+  end
+
 end

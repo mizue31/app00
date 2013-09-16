@@ -87,5 +87,13 @@ class ServicesController < ApplicationController
     end
   end
 
+  #
+  # Upolad and import
+  #
+  def import
+    Service.import(params[:file])
+    redirect_to services_path, notice: "Service imported"
+  end
+
 end
 

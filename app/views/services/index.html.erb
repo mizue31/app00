@@ -13,6 +13,11 @@
 <div id="dl_menu">
 Download:
 <%= link_to "CSV", services_path(format: "csv") %>
+|
+<%= form_tag import_services_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Upload" %>
+<% end %>
 </div>
 </p>
 

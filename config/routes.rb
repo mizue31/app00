@@ -6,6 +6,9 @@ App00::Application.routes.draw do
   resources :servers
   resources :components
   resources :services
+  resources :services do
+    collection {post :import }
+  end
   resources :admin do
     collection do
       get :admin
