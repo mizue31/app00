@@ -25,7 +25,7 @@ Description:
     Domain: <%= c.domain %>
     </li>
     <% c.servers.each do |s| %>
-      <li id="key<%= s.id %>" class="folder">
+      <li id="key<%= s.id %>">
         <%= s.host_name %>
         <ul>
         <% s.softwares.each do |sw| %>

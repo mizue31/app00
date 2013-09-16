@@ -10,4 +10,26 @@ class Component < ActiveRecord::Base
   attr_accessible :service_components_attributes
   validates :name, :presence => true, :uniqueness => true
   validates :domain, :inclusion => { :in => ["Application Services","Distributed","Mainframe","Networks","Workplaces","" ] }
+
+  def self.to_csv(components)
+    headers = %w( id name )
+    csv_data = CSV.generate(headers: headers, write_headers: true, force_quotes: true) do |csv|
+      enum = if components.is_a?(Array)
+        components.each
+      else
+        Enumerator.new do |yielder|
+          components.find_in_branches do |records|
+            records.each {|record| yielder.yield record }
+          end
+        end
+      end
+      enum.each do |component|
+        csv << [
+          component.id,
+          component.name
+        ]
+      end
+    end
+    csv_data.encode(Encoding::SJIS)
+  end
 end

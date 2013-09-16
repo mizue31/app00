@@ -1,6 +1,20 @@
+<div id="top_menu">
+<%= link_to "|SERVICE", services_path %>
+<%= link_to "|COMPONENT", components_path %>
+<%= link_to "|SERVER", servers_path %>
+<%= link_to "|SOFTWARE|", softwares_path %>
+</div>
+
 <div id="title">
 <h1>Listing services</h1>
 </div>
+
+<p>
+<div id="dl_menu">
+Download:
+<%= link_to "CSV", services_path(format: "csv") %>
+</div>
+</p>
 
 <table class="components">
   <tr>

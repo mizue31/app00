@@ -8,4 +8,31 @@ class Service < ActiveRecord::Base
   attr_accessible :description
   attr_accessible :service_components_attributes
   validates :name, :presence => true, :uniqueness => true
+
+  def self.to_csv(services)
+    headers = %w( id name sid code desc )
+    csv_data = CSV.generate(headers: headers, write_headers: true, force_quotes: true) do |csv|
+      enum = if services.is_a?(Array)
+        services.each
+      else
+        Enumerator.new do |yielder|
+          services.find_in_branches do |records|
+            records.each {|record| yielder.yield record }
+          end
+        end
+      end
+      enum.each do |service|
+        csv << [
+          service.id,
+          service.name,
+          service.name,
+          service.sid,
+          service.code,
+          service.description
+        ]
+      end
+    end
+    csv_data.encode(Encoding::SJIS)
+  end
+
 end

@@ -7,6 +7,9 @@ class ServicesController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @services }
+      #added for csv
+      format.csv {send_data Service.to_csv(@services), type: 'text/csv; charset=shift_jis', filename: "services.csv"}
+#      format.csv { send_data @services.to_csv }
     end
   end
 

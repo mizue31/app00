@@ -19,3 +19,11 @@ div#header, div#footer {
   background-color: white;
   color: #ccc;
 }
+
+div#dl_menu {
+  text-align: center;
+}
+
+div#top_menu {
+  text-align: center;
+}

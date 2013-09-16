@@ -7,6 +7,7 @@ class ComponentsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @components }
+      format.csv {send_data Component.to_csv(@components), type: 'text/csv; charset=shift_jis', filename: "components.csv"}
     end
   end
 
