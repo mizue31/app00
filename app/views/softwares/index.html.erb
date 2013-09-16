@@ -1,8 +1,8 @@
 <div id="top_menu">
-<%= link_to "|SERVICE", services_path %>
-<%= link_to "|COMPONENT", components_path %>
-<%= link_to "|SERVER", servers_path %>
-<%= link_to "|SOFTWARE|", softwares_path %>
+<%= link_to "|SERVICE", :controller=>"services", :action=>"index" %>
+<%= link_to "|COMPONENT", :controller=>"components", :action=>"index" %>
+<%= link_to "|SERVER", :controller=>"servers", :action=>"index" %>
+<%= link_to "|SOFTWARE|", :controller=>"softwares", :action=>"index" %>
 </div>
 
 <div id="title">

@@ -1,23 +1,16 @@
 App00::Application.routes.draw do
   resources :softwares
-
-
   resources :component_servers
-
-
   resources :componen_servers
-
-
   resources :service_components
-
-
   resources :servers
-
-
   resources :components
-
-
   resources :services
+  resources :admin do
+    collection do
+      get :admin
+    end
+  end
 
   resources :search do
     collection do

@@ -1,0 +1,21 @@
+<div id="tab">
+<ul>
+ <li><%= link_to "SERVICE", :controller=>"services", :action=>"index" %></li>
+ <li><%= link_to "COMPONENT", :controller=>"components", :action=>"index" %></li>
+ <li><%= link_to "SERVER", :name=>"#page3" %></li>
+ <li><%= link_to "SOFTWARE", :name=>"#page4" %></li>
+</ul>
+<div id="page1">
+ <%= render "/services/page1" %>
+</div>
+<div id="page2">
+ <%= render "/components/page2" %>
+</div>
+<div id="page3">
+ <%= render :template=>"/servers/index" %>
+</div>
+<div id="page4">
+ <%= render :template=>"/softwares/index" %>
+</div>
+</div>
+
