@@ -3,12 +3,17 @@ class ServicesController < ApplicationController
   # GET /services.json
   def index
     @services   = Service.all
-
+    
+    # get all nested tables
+    @all_table = Service.find(:all, :joins => {:service_components => [:component => {:component_servers=>[:server]}]})
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @services }
       #added for csv
-      format.csv {send_data Service.to_csv(@services), type: 'text/csv; charset=shift_jis', filename: "services.csv"}
+      format.csv {
+        send_data Service.to_csv(@services), type: 'text/csv; charset=shift_jis', filename: "services.csv"
+       }
 #      format.csv { send_data @services.to_csv }
     end
   end

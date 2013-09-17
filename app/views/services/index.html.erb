@@ -36,6 +36,28 @@ Download:
 <% end %>
 </table>
 
+<% @all_table.each do |s| %>
+  <%= s[:id] %>:
+  <%= s[:name] %>:
+  <% s.service_components.each do |sc| %>
+    <%= sc[:service_id] %>:
+    <%= sc[:component_id] %>:
+    <% s.components.each do |c| %>
+      <%= c.name %>:
+      <%= c.domain %>
+        <% c.component_servers.each do |cs| %>
+          <%= cs[:component_id] %>
+          <%= cs[:server_id] %>
+          <% c.servers.each do |serv| %>
+            <%= serv.host_name %>
+            <%= serv.os %>
+          <% end %>
+        <% end %>
+    <% end %>
+  <% end %>
+  </br>
+<% end %>
+
 <br />
 
 <div id="foot_menu">
