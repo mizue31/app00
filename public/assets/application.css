@@ -1,4 +1,4 @@
-div#header,div#footer{background-color:#909;background-color:white;color:#ccc}div#dl_menu{text-align:center}div#top_menu{text-align:center}/*!
+div#header,div#footer{background-color:#909;background-color:white;color:#ccc}table.download_menu{margin-left:auto;margin-right:auto;width:600px;border-spacing:1;border:1px solid white}table.download_menu td{background-color:indianred;padding:1px;color:white;text-align:center;font-size:8pt}div#top_menu{text-align:center;background-color:orangered;color:white;font-weight:bold}table.search_form{margin-left:auto;margin-right:auto;width:600px;border-spacing:1;border:1px solid white}table.search_form th{background-color:green;padding:1px;color:white;text-align:center;font-size:8pt}table.search_form td{background-color:limegreen;padding:1px;color:white;text-align:center;font-size:8pt}table.search_result{margin-left:auto;margin-right:auto;width:600px;border-spacing:1;border:1px solid white}table.search_result td{background-color:limegreen;padding:1px;color:white;text-align:center;font-size:8pt}/*!
  * jQuery UI CSS Framework 1.10.3
  * http://jqueryui.com
  *

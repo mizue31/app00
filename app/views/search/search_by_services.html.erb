@@ -2,18 +2,24 @@
 <h1>Search Result</h1>
 </div>
 
-Service Name:
-<%= @search.name %>
-<br />
-Service ID:
-<%= @search.sid %>
-<br />
-System Code:
-<%= @search.code %>
-<br />
-Description:
-<%= @search.description %>
-<br />
+<table class="search_result">
+<tr>
+  <td> Service Name </td>
+  <td> <%= @search.name %> </td>
+</tr>
+<tr>
+  <td> Service ID </td>
+  <td><%= @search.sid %></td>
+</tr>
+<tr>
+  <td> Sub System Code</td>
+  <td><%= @search.code %></td>
+</tr>
+<tr>
+  <td> Description</td>
+  <td><%= @search.description %></td>
+</tr>
+</table>
 
 <div id="ctree">
 <ul>
@@ -21,9 +27,6 @@ Description:
   <li id="key<%= c.id %>" class="folder">
     <%= c.name %>
     <ul>
-    <li>
-    Domain: <%= c.domain %>
-    </li>
     <% c.servers.each do |s| %>
       <li id="key<%= s.id %>">
         <%= s.host_name %>

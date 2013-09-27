@@ -1,26 +1,27 @@
 App00::Application.routes.draw do
-  resources :softwares
-  resources :component_servers
-  resources :componen_servers
   resources :service_components
-  resources :servers
-  resources :components
-  resources :services
+  resources :component_servers
+
   resources :services do
     collection {post :import }
   end
-  resources :admin do
-    collection do
-      get :admin
-    end
+  resources :components do
+    collection {post :import }
   end
+  resources :servers do
+    collection {post :import }
+  end
+  resources :softwares do
+    collection {post :import }
+  end
+
+  match "admin", :to=>'admin#index'
 
   resources :search do
     collection do
       post :exec_search
     end
   end
-
   resources :search
 
   # The priority is based upon order of creation:

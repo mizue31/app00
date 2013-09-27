@@ -87,4 +87,13 @@ class ComponentsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  #
+  # Upolad and import
+  #
+  def import
+    Component.import(params[:file])
+    redirect_to components_path, notice: "Component imported"
+  end
+
 end

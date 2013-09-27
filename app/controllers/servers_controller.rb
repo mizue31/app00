@@ -81,4 +81,13 @@ class ServersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  #
+  # Upolad and import
+  #
+  def import
+    Server.import(params[:file])
+    redirect_to servers_path, notice: "Server imported"
+  end
+
 end

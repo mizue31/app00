@@ -1,0 +1,852 @@
+
+---
+services:
+  columns:
+  - id
+  - name
+  - sid
+  - code
+  - description
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - ND21 Accounting
+    - '10010'
+    - xx
+    - Description of ND21 Accounting
+    - '2013-09-19 10:01:18.410808'
+    - '2013-09-19 10:01:18.410808'
+  - - 2
+    - SAP FI
+    - '10020'
+    - xx
+    - Description of SAP FI
+    - '2013-09-19 10:01:18.417151'
+    - '2013-09-19 10:01:18.417151'
+  - - 3
+    - Suspense Receipts Administration
+    - '10030'
+    - xx
+    - Description of Suspense Receipts Administration
+    - '2013-09-19 10:01:18.420465'
+    - '2013-09-19 10:01:18.420465'
+  - - 4
+    - Disbursement
+    - '10040'
+    - xx
+    - Description of Disbursement
+    - '2013-09-19 10:01:18.423415'
+    - '2013-09-19 10:01:18.423415'
+  - - 5
+    - i-win Collection and Disbursement
+    - '10050'
+    - xx
+    - Description of i-win Collection and Disbursement
+    - '2013-09-19 10:01:18.426842'
+    - '2013-09-19 10:01:18.426842'
+  - - 6
+    - ND21 Actuarial and Statistics
+    - '10060'
+    - xx
+    - Description of ND21 Actuarial and Statistics
+    - '2013-09-19 10:01:18.429912'
+    - '2013-09-19 10:01:18.429912'
+  - - 7
+    - Group Life Actuarial and Statistics
+    - '10070'
+    - xx
+    - Description of Group Life Actuarial and Statistics
+    - '2013-09-19 10:01:18.432863'
+    - '2013-09-19 10:01:18.432863'
+  - - 8
+    - i-win Actuarial
+    - '10080'
+    - xx
+    - Description of i-win Actuarial
+    - '2013-09-19 10:01:18.436260'
+    - '2013-09-19 10:01:18.436260'
+  - - 9
+    - Investment Management
+    - '10090'
+    - xx
+    - Description of Investment Management
+    - '2013-09-19 10:01:18.439265'
+    - '2013-09-19 10:01:18.439265'
+  - - 10
+    - i-win Investment
+    - '10100'
+    - xx
+    - Description of i-win Investment
+    - '2013-09-19 10:01:18.442130'
+    - '2013-09-19 10:01:18.442130'
+  - - 11
+    - Fundweb-I
+    - '10110'
+    - xx
+    - Description of Fundweb-I
+    - '2013-09-19 10:01:18.444992'
+    - '2013-09-19 10:01:18.444992'
+  - - 12
+    - Navi+ Agreement
+    - '10120'
+    - xx
+    - Description of Navi+ Agreement
+    - '2013-09-19 10:01:18.448000'
+    - '2013-09-19 10:01:18.448000'
+  - - 13
+    - QIT New Business (Web Online)
+    - '10130'
+    - xx
+    - Description of QIT New Business (Web Online)
+    - '2013-09-19 10:01:18.450812'
+    - '2013-09-19 10:01:18.450812'
+  - - 14
+    - QIT Underwriting Workflow
+    - '10140'
+    - xx
+    - Description of QIT Underwriting Workflow
+    - '2013-09-19 10:01:18.453670'
+    - '2013-09-19 10:01:18.453670'
+  - - 15
+    - ND21 New Business
+    - '10150'
+    - xx
+    - Description of ND21 New Business
+    - '2013-09-19 10:01:18.456499'
+    - '2013-09-19 10:01:18.456499'
+  - - 16
+    - i-win New Business
+    - '10160'
+    - xx
+    - Description of i-win New Business
+    - '2013-09-19 10:01:18.459476'
+    - '2013-09-19 10:01:18.459476'
+  - - 17
+    - Customer Customer-Based Process and Information Management
+    - '10170'
+    - xx
+    - Description of Customer Customer-Based Process and Information Management
+    - '2013-09-19 10:01:18.462440'
+    - '2013-09-19 10:01:18.462440'
+  - - 18
+    - Danposhin Policy Admin
+    - '10180'
+    - xx
+    - Description of Danposhin Policy Admin
+    - '2013-09-19 10:01:18.465263'
+    - '2013-09-19 10:01:18.465263'
+  - - 19
+    - ND21 Policy Admin
+    - '10190'
+    - xx
+    - Description of ND21 Policy Admin
+    - '2013-09-19 10:01:18.468099'
+    - '2013-09-19 10:01:18.468099'
+  - - 20
+    - Customer Mutual Aid
+    - '10200'
+    - xx
+    - Description of Customer Mutual Aid
+    - '2013-09-19 10:01:18.471070'
+    - '2013-09-19 10:01:18.471070'
+  - - 21
+    - i-win Policy Admin
+    - '10210'
+    - xx
+    - Description of i-win Policy Admin
+    - '2013-09-19 10:01:18.473997'
+    - '2013-09-19 10:01:18.473997'
+  - - 22
+    - (Former) Variable Life Insurance
+    - '10220'
+    - xx
+    - Description of (Former) Variable Life Insurance
+    - '2013-09-19 10:01:18.476878'
+    - '2013-09-19 10:01:18.476878'
+  - - 23
+    - Group Whole Life Insurance Policy Admin
+    - '10230'
+    - xx
+    - Description of Group Whole Life Insurance Policy Admin
+    - '2013-09-19 10:01:18.479725'
+    - '2013-09-19 10:01:18.479725'
+  - - 24
+    - Whole Life Insurance by Single Payment at Retirement
+    - '10240'
+    - xx
+    - Description of Whole Life Insurance by Single Payment at Retirement
+    - '2013-09-19 10:01:18.482718'
+    - '2013-09-19 10:01:18.482718'
+  - - 25
+    - Asset-Accumulating Savings Policy Admin
+    - '10250'
+    - xx
+    - Description of Asset-Accumulating Savings Policy Admin
+    - '2013-09-19 10:01:18.485686'
+    - '2013-09-19 10:01:18.485686'
+  - - 26
+    - Qualified Annuity Policy Admin
+    - '10260'
+    - xx
+    - Description of Qualified Annuity Policy Admin
+    - '2013-09-19 10:01:18.488562'
+    - '2013-09-19 10:01:18.488562'
+  - - 27
+    - Fire Mutual Policy Admin
+    - '10270'
+    - xx
+    - Description of Fire Mutual Policy Admin
+    - '2013-09-19 10:01:18.491425'
+    - '2013-09-19 10:01:18.491425'
+  - - 28
+    - Old Individual Medical Policy Admin
+    - '10280'
+    - xx
+    - Description of Old Individual Medical Policy Admin
+    - '2013-09-19 10:01:18.494464'
+    - '2013-09-19 10:01:18.494464'
+  - - 29
+    - Operational Efficiency Workflow
+    - '10290'
+    - xx
+    - Description of Operational Efficiency Workflow
+    - '2013-09-19 10:01:18.497247'
+    - '2013-09-19 10:01:18.497247'
+  - - 30
+    - QIT Surrender Application Printing (Web Online)
+    - '10300'
+    - xx
+    - Description of QIT Surrender Application Printing (Web Online)
+    - '2013-09-19 10:01:18.500077'
+    - '2013-09-19 10:01:18.500077'
+  - - 31
+    - Tokyo CCI Billing
+    - '10310'
+    - xx
+    - Description of Tokyo CCI Billing
+    - '2013-09-19 10:01:18.503136'
+    - '2013-09-19 10:01:18.503136'
+  - - 32
+    - OE First Premium Collection via Convenience Store
+    - '10320'
+    - xx
+    - Description of OE First Premium Collection via Convenience Store
+    - '2013-09-19 10:01:18.506798'
+    - '2013-09-19 10:01:18.506798'
+  - - 33
+    - ND21 Collection
+    - '10340'
+    - xx
+    - Description of ND21 Collection
+    - '2013-09-19 10:01:18.517940'
+    - '2013-09-19 10:01:18.517940'
+  - - 34
+    - Damposhin Collection
+    - '10350'
+    - xx
+    - Description of Damposhin Collection
+    - '2013-09-19 10:01:18.521208'
+    - '2013-09-19 10:01:18.521208'
+  - - 35
+    - CAN Collection
+    - '10360'
+    - xx
+    - Description of CAN Collection
+    - '2013-09-19 10:01:18.524311'
+    - '2013-09-19 10:01:18.524311'
+  - - 36
+    - Payment Web
+    - '10370'
+    - xx
+    - Description of Payment Web
+    - '2013-09-19 10:01:18.527333'
+    - '2013-09-19 10:01:18.527333'
+  - - 37
+    - QIT Claims Workflow
+    - '10380'
+    - xx
+    - Description of QIT Claims Workflow
+    - '2013-09-19 10:01:18.531006'
+    - '2013-09-19 10:01:18.531006'
+  - - 38
+    - ND21 Claims
+    - '10390'
+    - xx
+    - Description of ND21 Claims
+    - '2013-09-19 10:01:18.534135'
+    - '2013-09-19 10:01:18.534135'
+  - - 39
+    - Damposhin Claims
+    - '10400'
+    - xx
+    - Description of Damposhin Claims
+    - '2013-09-19 10:01:18.537223'
+    - '2013-09-19 10:01:18.537223'
+  - - 40
+    - Annuitant Administration
+    - '10410'
+    - xx
+    - Description of Annuitant Administration
+    - '2013-09-19 10:01:18.540260'
+    - '2013-09-19 10:01:18.540260'
+  - - 41
+    - Annuity Valuation
+    - '10420'
+    - xx
+    - Description of Annuity Valuation
+    - '2013-09-19 10:01:18.543332'
+    - '2013-09-19 10:01:18.543332'
+  - - 42
+    - Business Performance
+    - '10430'
+    - xx
+    - Description of Business Performance
+    - '2013-09-19 10:01:18.546444'
+    - '2013-09-19 10:01:18.546444'
+  - - 43
+    - Sales Reps Management
+    - '10440'
+    - xx
+    - Description of Sales Reps Management
+    - '2013-09-19 10:01:18.549523'
+    - '2013-09-19 10:01:18.549523'
+  - - 44
+    - Recruit Management System (RMS)
+    - '10460'
+    - xx
+    - Description of Recruit Management System (RMS)
+    - '2013-09-19 10:01:18.552562'
+    - '2013-09-19 10:01:18.552562'
+  - - 45
+    - Agency Management
+    - '10470'
+    - xx
+    - Description of Agency Management
+    - '2013-09-19 10:01:18.556137'
+    - '2013-09-19 10:01:18.556137'
+  - - 46
+    - Life Advisor Management
+    - '10480'
+    - xx
+    - Description of Life Advisor Management
+    - '2013-09-19 10:01:18.559334'
+    - '2013-09-19 10:01:18.559334'
+  - - 47
+    - Customer Database
+    - '10490'
+    - xx
+    - Description of Customer Database
+    - '2013-09-19 10:01:18.562494'
+    - '2013-09-19 10:01:18.562494'
+  - - 48
+    - Information Database
+    - '10500'
+    - xx
+    - Description of Information Database
+    - '2013-09-19 10:01:18.565830'
+    - '2013-09-19 10:01:18.565830'
+  - - 49
+    - Market Administration
+    - '10510'
+    - xx
+    - Description of Market Administration
+    - '2013-09-19 10:01:18.569043'
+    - '2013-09-19 10:01:18.569043'
+  - - 50
+    - Lead Management Tool(LMT,CIS)
+    - '10520'
+    - xx
+    - Description of Lead Management Tool(LMT,CIS)
+    - '2013-09-19 10:01:18.572171'
+    - '2013-09-19 10:01:18.572171'
+  - - 51
+    - Navi+ Proposal
+    - '10530'
+    - xx
+    - Description of Navi+ Proposal
+    - '2013-09-19 10:01:18.575414'
+    - '2013-09-19 10:01:18.575414'
+  - - 52
+    - Web Proposal Illustration Tool (Japan Post)
+    - '10540'
+    - xx
+    - Description of Web Proposal Illustration Tool (Japan Post)
+    - '2013-09-19 10:01:18.578621'
+    - '2013-09-19 10:01:18.578621'
+  - - 53
+    - Surrender and Lapse (Counterproposal for S&L)
+    - '10550'
+    - xx
+    - Description of Surrender and Lapse (Counterproposal for S&L)
+    - '2013-09-19 10:01:18.581757'
+    - '2013-09-19 10:01:18.581757'
+  - - 54
+    - Customer Web Portal
+    - '10560'
+    - xx
+    - Description of Customer Web Portal
+    - '2013-09-19 10:01:18.584887'
+    - '2013-09-19 10:01:18.584887'
+  - - 55
+    - Agent Gateway Portal
+    - '10570'
+    - xx
+    - Description of Agent Gateway Portal
+    - '2013-09-19 10:01:18.588215'
+    - '2013-09-19 10:01:18.588215'
+  - - 56
+    - Bancassuarance Portal (AXA Support Web)
+    - '10580'
+    - xx
+    - Description of Bancassuarance Portal (AXA Support Web)
+    - '2013-09-19 10:01:18.591377'
+    - '2013-09-19 10:01:18.591377'
+  - - 57
+    - BancaAdmin
+    - '10580'
+    - xx
+    - Description of BancaAdmin
+    - '2013-09-19 10:01:18.594522'
+    - '2013-09-19 10:01:18.594522'
+  - - 58
+    - Data Transfer to NTT Gateway and ISS
+    - '10590'
+    - xx
+    - Description of Data Transfer to NTT Gateway and ISS
+    - '2013-09-19 10:01:18.597836'
+    - '2013-09-19 10:01:18.597836'
+  - - 59
+    - Siebel Contact Center
+    - '10600'
+    - xx
+    - Description of Siebel Contact Center
+    - '2013-09-19 10:01:18.601000'
+    - '2013-09-19 10:01:18.601000'
+  - - 60
+    - ANNEX eBusiness
+    - '10620'
+    - xx
+    - Description of ANNEX eBusiness
+    - '2013-09-19 10:01:18.604168'
+    - '2013-09-19 10:01:18.604168'
+  - - 61
+    - ND21 Access Privilege Administration
+    - '10640'
+    - xx
+    - Description of ND21 Access Privilege Administration
+    - '2013-09-19 10:01:18.607362'
+    - '2013-09-19 10:01:18.607362'
+  - - 62
+    - Memorandum Administration
+    - '10650'
+    - xx
+    - Description of Memorandum Administration
+    - '2013-09-19 10:01:18.610610'
+    - '2013-09-19 10:01:18.610610'
+  - - 63
+    - Form Supply
+    - '10660'
+    - xx
+    - Description of Form Supply
+    - '2013-09-19 10:01:18.613812'
+    - '2013-09-19 10:01:18.613812'
+  - - 64
+    - Fixed Assets (ProPlus)
+    - '10670'
+    - xx
+    - Description of Fixed Assets (ProPlus)
+    - '2013-09-19 10:01:18.616985'
+    - '2013-09-19 10:01:18.616985'
+  - - 65
+    - Employee Payroll
+    - '10680'
+    - xx
+    - Description of Employee Payroll
+    - '2013-09-19 10:01:18.620449'
+    - '2013-09-19 10:01:18.620449'
+  - - 66
+    - HR Survey
+    - '10690'
+    - xx
+    - Description of HR Survey
+    - '2013-09-19 10:01:18.623676'
+    - '2013-09-19 10:01:18.623676'
+  - - 67
+    - AXA Homepage
+    - '10700'
+    - xx
+    - Description of AXA Homepage
+    - '2013-09-19 10:01:18.626874'
+    - '2013-09-19 10:01:18.626874'
+  - - 68
+    - AIS - Agent Information System (Agent Producer DB)
+    - '10710'
+    - xx
+    - Description of AIS - Agent Information System (Agent Producer DB)
+    - '2013-09-19 10:01:18.630096'
+    - '2013-09-19 10:01:18.630096'
+  - - 69
+    - First Contact Resolution
+    - '10720'
+    - xx
+    - Description of First Contact Resolution
+    - '2013-09-19 10:01:18.633270'
+    - '2013-09-19 10:01:18.633270'
+  - - 70
+    - Ariba Procurement Management
+    - '10730'
+    - xx
+    - Description of Ariba Procurement Management
+    - '2013-09-19 10:01:18.636484'
+    - '2013-09-19 10:01:18.636484'
+  - - 71
+    - Data Transfer to AXA-BS
+    - '10740'
+    - xx
+    - Description of Data Transfer to AXA-BS
+    - '2013-09-19 10:01:18.639665'
+    - '2013-09-19 10:01:18.639665'
+  - - 72
+    - D-Binder Electronic Filing System
+    - '10750'
+    - xx
+    - Description of D-Binder Electronic Filing System
+    - '2013-09-19 10:01:18.642952'
+    - '2013-09-19 10:01:18.642952'
+  - - 73
+    - BI Data Warehouse and Datamart
+    - '10760'
+    - xx
+    - Description of BI Data Warehouse and Datamart
+    - '2013-09-19 10:01:18.646185'
+    - '2013-09-19 10:01:18.646185'
+  - - 74
+    - Claims Support(W-entry,PIS.PSS)
+    - '10770'
+    - xx
+    - Description of Claims Support(W-entry,PIS.PSS)
+    - '2013-09-19 10:01:18.649409'
+    - '2013-09-19 10:01:18.649409'
+  - - 75
+    - Customer Information File (CIF)
+    - '10780'
+    - xx
+    - Description of Customer Information File (CIF)
+    - '2013-09-19 10:01:18.652549'
+    - '2013-09-19 10:01:18.652549'
+  - - 76
+    - Product Rate Calculation
+    - '10790'
+    - xx
+    - Description of Product Rate Calculation
+    - '2013-09-19 10:01:18.656080'
+    - '2013-09-19 10:01:18.656080'
+  - - 77
+    - Life-J New Business
+    - '10800'
+    - xx
+    - Description of Life-J New Business
+    - '2013-09-19 10:01:18.659298'
+    - '2013-09-19 10:01:18.659298'
+  - - 78
+    - Life-J Policy Admin
+    - '10810'
+    - xx
+    - Description of Life-J Policy Admin
+    - '2013-09-19 10:01:18.662558'
+    - '2013-09-19 10:01:18.662558'
+  - - 79
+    - Life-J Collection
+    - '10820'
+    - xx
+    - Description of Life-J Collection
+    - '2013-09-19 10:01:18.665872'
+    - '2013-09-19 10:01:18.665872'
+  - - 80
+    - Life-J Claims
+    - '10830'
+    - xx
+    - Description of Life-J Claims
+    - '2013-09-19 10:01:18.669075'
+    - '2013-09-19 10:01:18.669075'
+  - - 81
+    - Life-J Actuarial & Statistics
+    - '10840'
+    - xx
+    - Description of Life-J Actuarial & Statistics
+    - '2013-09-19 10:01:18.672329'
+    - '2013-09-19 10:01:18.672329'
+  - - 82
+    - Life-J Accounting
+    - '10850'
+    - xx
+    - Description of Life-J Accounting
+    - '2013-09-19 10:01:18.693587'
+    - '2013-09-19 10:01:18.693587'
+  - - 83
+    - Life-J Annuity Payouts
+    - '10860'
+    - xx
+    - Description of Life-J Annuity Payouts
+    - '2013-09-19 10:01:18.696870'
+    - '2013-09-19 10:01:18.696870'
+  - - 84
+    - Life-J Agency Management
+    - '10870'
+    - xx
+    - Description of Life-J Agency Management
+    - '2013-09-19 10:01:18.700787'
+    - '2013-09-19 10:01:18.700787'
+  - - 85
+    - Life-J Business Performance & Commission
+    - '10880'
+    - xx
+    - Description of Life-J Business Performance & Commission
+    - '2013-09-19 10:01:18.704592'
+    - '2013-09-19 10:01:18.704592'
+  - - 86
+    - Life-J Customer Information
+    - '10890'
+    - xx
+    - Description of Life-J Customer Information
+    - '2013-09-19 10:01:18.708611'
+    - '2013-09-19 10:01:18.708611'
+  - - 87
+    - Agent Web (AFL)
+    - '10910'
+    - xx
+    - Description of Agent Web (AFL)
+    - '2013-09-19 10:01:18.712235'
+    - '2013-09-19 10:01:18.712235'
+  - - 88
+    - Customer Web (AFL)
+    - '10920'
+    - xx
+    - Description of Customer Web (AFL)
+    - '2013-09-19 10:01:18.715953'
+    - '2013-09-19 10:01:18.715953'
+  - - 89
+    - AdminTool (AFL)
+    - '10920'
+    - xx
+    - Description of AdminTool (AFL)
+    - '2013-09-19 10:01:18.719575'
+    - '2013-09-19 10:01:18.719575'
+  - - 90
+    - UnitPrice Display (AFL)
+    - '10920'
+    - xx
+    - Description of UnitPrice Display (AFL)
+    - '2013-09-19 10:01:18.723199'
+    - '2013-09-19 10:01:18.723199'
+  - - 91
+    - Re-insurance Application (AFL)
+    - '10950'
+    - xx
+    - Description of Re-insurance Application (AFL)
+    - '2013-09-19 10:01:18.727045'
+    - '2013-09-19 10:01:18.727045'
+  - - 92
+    - ANSER / U-line Web (AFL)
+    - '10970'
+    - xx
+    - Description of ANSER / U-line Web (AFL)
+    - '2013-09-19 10:01:18.730850'
+    - '2013-09-19 10:01:18.730850'
+  - - 93
+    - Salesforce contact Center (AFL)
+    - '11000'
+    - xx
+    - Description of Salesforce contact Center (AFL)
+    - '2013-09-19 10:01:18.734462'
+    - '2013-09-19 10:01:18.734462'
+  - - 94
+    - Claim Payment Workflow
+    - '11020'
+    - xx
+    - Description of Claim Payment Workflow
+    - '2013-09-19 10:01:18.738273'
+    - '2013-09-19 10:01:18.738273'
+  - - 95
+    - Salesforce contact Center
+    - '11030'
+    - xx
+    - Description of Salesforce contact Center
+    - '2013-09-19 10:01:18.742003'
+    - '2013-09-19 10:01:18.742003'
+  - - 96
+    - Ms Dynamics contact Center (AG/Corp)
+    - '11040'
+    - xx
+    - Description of Ms Dynamics contact Center (AG/Corp)
+    - '2013-09-19 10:01:18.745587'
+    - '2013-09-19 10:01:18.745587'
+  - - 97
+    - New Business Underwriting Workflow
+    - '11050'
+    - xx
+    - Description of New Business Underwriting Workflow
+    - '2013-09-19 10:01:18.749334'
+    - '2013-09-19 10:01:18.749334'
+  - - 98
+    - Taxable Annuity amount calculation tool
+    - '11060'
+    - xx
+    - Description of Taxable Annuity amount calculation tool
+    - '2013-09-19 10:01:18.753162'
+    - '2013-09-19 10:01:18.753162'
+  - - 99
+    - GT AIA Annuity payment management
+    - '11070'
+    - xx
+    - Description of GT AIA Annuity payment management
+    - '2013-09-19 10:01:18.756784'
+    - '2013-09-19 10:01:18.756784'
+  - - 100
+    - BI Separate a/c auto reconciliation
+    - '11080'
+    - xx
+    - Description of BI Separate a/c auto reconciliation
+    - '2013-09-19 10:01:18.760685'
+    - '2013-09-19 10:01:18.760685'
+  - - 101
+    - BI SPI & Sales activity Reporting
+    - '11090'
+    - xx
+    - Description of BI SPI & Sales activity Reporting
+    - '2013-09-19 10:01:18.764436'
+    - '2013-09-19 10:01:18.764436'
+  - - 102
+    - BI CCI Performance Simulation
+    - '11100'
+    - xx
+    - Description of BI CCI Performance Simulation
+    - '2013-09-19 10:01:18.768703'
+    - '2013-09-19 10:01:18.768703'
+  - - 103
+    - People Soft Human Resources Management
+    - '11130'
+    - xx
+    - Description of People Soft Human Resources Management
+    - '2013-09-19 10:01:18.773268'
+    - '2013-09-19 10:01:18.773268'
+  - - 104
+    - PeopleIn Global Human Resources Management
+    - '11140'
+    - xx
+    - Description of PeopleIn Global Human Resources Management
+    - '2013-09-19 10:01:18.776988'
+    - '2013-09-19 10:01:18.776988'
+  - - 105
+    - ND21 Human Resources Interface
+    - '11150'
+    - xx
+    - Description of ND21 Human Resources Interface
+    - '2013-09-19 10:01:18.780640'
+    - '2013-09-19 10:01:18.780640'
+  - - 106
+    - BI In-force Management - Persistency and S&LP
+    - '11160'
+    - xx
+    - Description of BI In-force Management - Persistency and S&LP
+    - '2013-09-19 10:01:18.784485'
+    - '2013-09-19 10:01:18.784485'
+  - - 107
+    - Salesforce contact Center - FI Sales Tracking
+    - '11170'
+    - xx
+    - Description of Salesforce contact Center - FI Sales Tracking
+    - '2013-09-19 10:01:18.788452'
+    - '2013-09-19 10:01:18.788452'
+  - - 108
+    - BI Direct marketing sales dashboard
+    - '11180'
+    - xx
+    - Description of BI Direct marketing sales dashboard
+    - '2013-09-19 10:01:18.792059'
+    - '2013-09-19 10:01:18.792059'
+  - - 109
+    - BI sales channel Compensation statement
+    - '11190'
+    - xx
+    - Description of BI sales channel Compensation statement
+    - '2013-09-19 10:01:18.795534'
+    - '2013-09-19 10:01:18.795534'
+  - - 110
+    - Daptiv Project Portfolio Management
+    - '11200'
+    - xx
+    - Description of Daptiv Project Portfolio Management
+    - '2013-09-19 10:01:18.799529'
+    - '2013-09-19 10:01:18.799529'
+  - - 111
+    - Salesforce Complaint Management
+    - '11210'
+    - xx
+    - Description of Salesforce Complaint Management
+    - '2013-09-19 10:01:18.803136'
+    - '2013-09-19 10:01:18.803136'
+  - - 112
+    - i-win Annuity payment management
+    - '11220'
+    - xx
+    - Description of i-win Annuity payment management
+    - '2013-09-19 10:01:18.806951'
+    - '2013-09-19 10:01:18.806951'
+  - - 113
+    - Call  Center Telephony System
+    - '11230'
+    - xx
+    - Description of Call  Center Telephony System
+    - '2013-09-19 10:01:18.810603'
+    - '2013-09-19 10:01:18.810603'
+  - - 114
+    - AML Screening Managemennt
+    - '11240'
+    - xx
+    - Description of AML Screening Managemennt
+    - '2013-09-19 10:01:18.814249'
+    - '2013-09-19 10:01:18.814249'
+  - - 115
+    - Credit Card Payment Data Interface
+    - '11250'
+    - xx
+    - Description of Credit Card Payment Data Interface
+    - '2013-09-19 10:01:18.818001'
+    - '2013-09-19 10:01:18.818001'
+  - - 116
+    - Salesforce Sales Activity Management
+    - '11260'
+    - xx
+    - Description of Salesforce Sales Activity Management
+    - '2013-09-19 10:01:18.821905'
+    - '2013-09-19 10:01:18.821905'
+  - - 117
+    - Customer MyPage
+    - '11270'
+    - xx
+    - Description of Customer MyPage
+    - '2013-09-19 10:01:18.825708'
+    - '2013-09-19 10:01:18.825708'
+  - - 118
+    - Daiwa Securities Data Interface
+    - '11280'
+    - xx
+    - Description of Daiwa Securities Data Interface
+    - '2013-09-19 10:01:18.829254'
+    - '2013-09-19 10:01:18.829254'
+  - - 119
+    - Lotus Global Intranet
+    - '11290'
+    - xx
+    - Description of Lotus Global Intranet
+    - '2013-09-19 10:01:18.833263'
+    - '2013-09-19 10:01:18.833263'
+  - - 120
+    - BI HR Employee Reporting and Analysis
+    - '11300'
+    - xx
+    - Description of BI HR Employee Reporting and Analysis
+    - '2013-09-19 10:01:18.869637'
+    - '2013-09-19 10:01:18.869637'

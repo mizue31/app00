@@ -1,29 +1,30 @@
 <table class="search_form">
 
+<tr><th>
 <%= form_tag "search_key" do %>
-
-Select Search Key : 
+Select Search Key 
+</th>
+<th>
 <%= select_tag "search_key", options_for_select({"--- SELECT ---"=>0, 'Service'=>1, 'Server'=>2}, :selected => 0 ) %>
-
+</th>
+</tr>
 <% end %>
 
-<%= form_for :conditions, :url=>{:action=>'exec_search',:method => "get"} do |f| %>
+<%= form_for :conditions, :url=>{:action=>'exec_search'}, :html=>{:method=> :post, :onsubmit=>"return check_search_form();"} do |f| %>
 
-<tr><td>
+<tr><td colspan=2>
 <div id="search_service" style="display:none">
-Select Service:
-    <%= f.select :sc, @services.collect {|sc| [sc.name, sc.id] }, :include_blank => "select service", :selected => 0 %>
+    <%= f.select :sc, @services.collect {|sc| [sc.name, sc.id] }, :include_blank => "--- select service ---", :selected => 0 %>
 </div>
 <div id="search_server" style="display:none">
-Select Server:
-    <%= f.select :sv, @servers.collect {|sv| [sv.host_name, sv.id] }, :include_blank => "select server", :selected => 0 %>
+    <%= f.select :sv, @servers.collect {|sv| [sv.host_name, sv.id] }, :include_blank => "--- select server ---", :selected => 0 %>
 </div>
 </td></tr>
 
-<br />
 
-<tr><td>
-<%= f.submit 'search' %>
+<tr>
+<td colspan=2>
+<%= f.submit 'Search' %>
 </td></tr>
 
 <% end %>

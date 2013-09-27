@@ -2,14 +2,20 @@
 <h1>Search Result</h1>
 </div>
 
-Server Name:
-<%= @search.host_name %>
-<br />
-OS:
-<%= @search.os %>
-<br />
-P/V:
-<%= @search.p_or_v %>
+<table class="search_result">
+<tr>
+  <td> Server Name </td>
+  <td> <%= @search.host_name %> </td>
+</tr>
+<tr>
+  <td> OS </td>
+  <td> <%= @search.os %> </td>
+</tr>
+<tr>
+  <td>Physical/Virtual</td>
+  <td><%= @search.p_or_v %></td>
+</tr>
+</table>
 
 <div id="ctree">
 <ul>
@@ -17,9 +23,6 @@ P/V:
   <li id="key<%= c.id %>" class="folder">
     <%= c.name %>
     <ul>
-    <li>
-      Domain:<%= c.domain %>
-    </li>
     <% c.services.each do |s| %>
       <li id="key<%= s.id %>">
         <%= s.name %>

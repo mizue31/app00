@@ -1,0 +1,21 @@
+<div id="top_menu">
+<%= link_to "|SERVICE", :controller=>"services", :action=>"index" %>
+<%= link_to "|COMPONENT", :controller=>"components", :action=>"index" %>
+<%= link_to "|SERVER", :controller=>"servers", :action=>"index" %>
+<%= link_to "|SOFTWARE|", :controller=>"softwares", :action=>"index" %>
+</div>
+
+<p>
+<table class="dl_menu">
+<tr>
+  <td> Download </td>
+  <td> <%= link_to "CSV", admin_path(format: "csv") %> </td>
+</tr>
+<tr>
+  <td> Upload </td>
+  <td> <%= form_tag import_services_path, multipart: true do -%> <%= file_field_tag :file -%> <%= submit_tag "Upload" %>
+  </td>
+</tr>
+</table>
+<% end %>
+</p>

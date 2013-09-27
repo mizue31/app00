@@ -1,4 +1,5 @@
 <div id="top_menu">
+<%= link_to "|HOME", :controller=>"admin", :action=>"index" %>
 <%= link_to "|SERVICE", :controller=>"services", :action=>"index" %>
 <%= link_to "|COMPONENT", :controller=>"components", :action=>"index" %>
 <%= link_to "|SERVER", :controller=>"servers", :action=>"index" %>
@@ -8,13 +9,6 @@
 <div id="title">
 <h1>Listing servers</h1>
 </div>
-
-<p>
-<div id="dl_menu">
-Download:
-<%= link_to "CSV", servers_path(format: "csv") %>
-</div>
-</p>
 
 <table class='components'>
   <tr>

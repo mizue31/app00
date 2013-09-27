@@ -81,4 +81,13 @@ class SoftwaresController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  #
+  # Upolad and import
+  #
+  def import
+    Software.import(params[:file])
+    redirect_to softwares_path, notice: "Software imported"
+  end
+
 end

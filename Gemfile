@@ -49,6 +49,8 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
+# DB dump
+gem 'yaml_db'
 
 #
 #gem 'rails_admin', '~> 3.x', :git => 'git://github.com/sferik/rails_admin.git'

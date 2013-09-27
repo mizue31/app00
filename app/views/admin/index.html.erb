@@ -1,6 +1,113 @@
 <div id="top_menu">
+<%= link_to "|HOME", :controller=>"admin", :action=>"index" %>
 <%= link_to "|SERVICE", :controller=>"services", :action=>"index" %>
 <%= link_to "|COMPONENT", :controller=>"components", :action=>"index" %>
 <%= link_to "|SERVER", :controller=>"servers", :action=>"index" %>
 <%= link_to "|SOFTWARE|", :controller=>"softwares", :action=>"index" %>
 </div>
+
+<div id="title">
+<h1>HOME</h1>
+</div>
+
+<table class="download_menu">
+<tr>
+  <td>
+  CSV Download 
+  </td><td>
+  <%= link_to "SERVICE", services_path(format: "csv") %>
+  </td> 
+</tr>
+<tr> 
+  <td>
+  CSV Download 
+  </td><td>
+  <%= link_to "COMPONENT", components_path(format: "csv") %>
+  </td> 
+</tr>
+<tr> 
+  <td>
+  CSV Download 
+  </td><td>
+  <%= link_to "SERVER", servers_path(format: "csv") %>
+  </td> 
+</tr>
+<tr> 
+  <td>
+  CSV Download 
+  </td><td>
+  <%= link_to "SOFTWARE", softwares_path(format: "csv") %>
+  </td> 
+</tr>
+<tr> 
+  <td>
+  CSV Download 
+  </td><td>
+  <%= link_to "ALL TABLE", admin_path(format: "csv") %> (experimental)
+  </td> 
+</tr>
+</table>
+
+</br>
+
+<table class="download_menu">
+<tr> 
+  <td>
+  CSV Upload SERVICE 
+  </td>
+  <td>
+  <%= form_tag import_services_path, multipart: true do %>
+   <%= file_field_tag :file %>
+  </td>
+  <td>
+   <%= submit_tag "Upload" %>
+  <% end %>
+  </td>
+  </td> 
+</tr>
+
+<tr> 
+  <td>
+  CSV Upload COMPONENT
+  </td>
+  <td>
+  <%= form_tag import_components_path, multipart: true do %>
+   <%= file_field_tag :file %>
+  </td>
+  <td>
+   <%= submit_tag "Upload" %>
+  <% end %>
+  </td>
+  </td> 
+</tr>
+<tr> 
+  <td>
+  CSV Upload SERVER
+  </td>
+  <td>
+  <%= form_tag import_servers_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  </td>
+  <td>
+  <%= submit_tag "Upload" %>
+  <% end %>
+  </td>
+  </td> 
+</tr>
+
+<tr> 
+  <td>
+  CSV Upload SOFTWARE
+  </td>
+  <td>
+  <%= form_tag import_softwares_path, multipart: true do %>
+   <%= file_field_tag :file %>
+  </td>
+  <td>
+   <%= submit_tag "Upload" %>
+  <% end %>
+  </td> 
+</tr>
+
+</table>
+

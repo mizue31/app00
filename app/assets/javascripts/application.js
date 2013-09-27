@@ -29,18 +29,14 @@ function add_fields(link, association, content) {
     $(link).parent().before(content.replace(regexp, new_id));
 }
 
-$(document).ready(function(){
-    $("#tabs").tabs({
-      beforeLoad: function(event, ui){
-        if (ui.tab.data("loaded")){
-          event.preventDefault();
-          return;
-        }
-        ui.jqXHR.success(function(){
-          ui.tab.data("loaded", true);
-        });
-        cache: true
-      }
-    });
+jQuery(function(){
+  jQuery("#tabs").tabs();
 });
 
+function check_search_form(){
+  alert(document.getlelementById('sc'));
+  if(document.getElementById('sc').value == ""){
+    return false;
+  }
+  return true;
+}
