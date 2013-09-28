@@ -30,7 +30,7 @@ Service.create(:id=>29, :name=>"Operational Efficiency Workflow", :sid=>"10290",
 Service.create(:id=>30, :name=>"QIT Surrender Application Printing (Web Online)", :sid=>"10300", :code=>"xx", :description=>"Description of QIT Surrender Application Printing (Web Online)")
 Service.create(:id=>31, :name=>"Tokyo CCI Billing", :sid=>"10310", :code=>"xx", :description=>"Description of Tokyo CCI Billing")
 Service.create(:id=>32, :name=>"OE First Premium Collection via Convenience Store", :sid=>"10320", :code=>"xx", :description=>"Description of OE First Premium Collection via Convenience Store")
-Service.create(:id=>33, :name=>"(Former) Variable Life Insurance", :sid=>"10330", :code=>"xx", :description=>"Description of (Former) Variable Life Insurance")
+Service.create(:id=>33, :name=>"(Former) Variable Life Insurance (2)", :sid=>"10330", :code=>"xx", :description=>"Description of (Former) Variable Life Insurance(2)")
 Service.create(:id=>34, :name=>"ND21 Collection", :sid=>"10340", :code=>"xx", :description=>"Description of ND21 Collection")
 Service.create(:id=>35, :name=>"Damposhin Collection", :sid=>"10350", :code=>"xx", :description=>"Description of Damposhin Collection")
 Service.create(:id=>36, :name=>"CAN Collection", :sid=>"10360", :code=>"xx", :description=>"Description of CAN Collection")
