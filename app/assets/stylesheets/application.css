@@ -20,6 +20,15 @@ div#header, div#footer {
   color: #ccc;
 }
 
+div#ctree {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  background-color: limegreen;
+}
+
+span.tree a {background-color: yellow;}
+
 table.download_menu {
   margin-left: auto;
   margin-right: auto;

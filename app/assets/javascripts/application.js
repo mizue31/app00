@@ -34,8 +34,14 @@ jQuery(function(){
 });
 
 function check_search_form(){
-  alert(document.getlelementById('sc'));
-  if(document.getElementById('sc').value == ""){
+  if(document.forms[0]['search_key'].selectedIndex == 1 && 
+     document.forms[1]["conditions[sc]"].selectedIndex == 0){
+    alert('please select Service Name');
+    return false;
+  }
+  if(document.forms[0]['search_key'].selectedIndex == 2 && 
+     document.forms[1]["conditions[sv]"].selectedIndex == 0){
+    alert('please select Server Name');
     return false;
   }
   return true;
