@@ -1,5 +1,7 @@
 class SearchController < ApplicationController
 
+  before_filter :authenticate_user!
+
   # added
   # Index page for Search
   def index

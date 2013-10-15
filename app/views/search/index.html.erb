@@ -1,7 +1,12 @@
+<% content_for :topbar do %>
+<% if can? :manage, Template %>
+  <li><%= link_to 'Admin site', admin_path %></li>
+<% end %>
+<% end %>
+
 <div id="title">
 <h1>Inventory Search</h1>
 </div>
 
 <%= render :partial => 'form' %>
-
 

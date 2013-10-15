@@ -1,19 +1,19 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails' #, '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # for local Development
-#gem 'sqlite3', groups: %w(test development), require:false
+gem 'sqlite3', groups: %w(test development), require:false
 
 # for Heroku
 #gem 'pg', groups: %w(production), require:false
 
 # for MOGOK
-gem 'mysql2', groups: %w(production), require:false
-gem 'therubyracer', groups: %w(production), require:false
+#gem 'mysql2', groups: %w(production), require:false
+#gem 'therubyracer', groups: %w(production), require:false
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -22,9 +22,13 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+
+  # added for twitter-bootstrap
+  gem 'less-rails'
+  gem 'twitter-bootstrap-rails'
 
 end
 
@@ -58,3 +62,6 @@ gem 'yaml_db'
 group :development do
   gem 'rails-erd'
 end
+
+gem 'devise'
+gem 'cancan'

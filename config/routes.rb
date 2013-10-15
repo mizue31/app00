@@ -1,4 +1,13 @@
 App00::Application.routes.draw do
+
+  resource :users do
+    get :index
+    get :new
+    post :create
+  end
+
+  devise_for :users
+
   resources :service_components
   resources :component_servers
 
@@ -74,6 +83,8 @@ App00::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
+
+  root :to => 'search#index'
 
   # See how all your routes lay out with "rake routes"
 

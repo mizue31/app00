@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require jquery.ui.all
 //= require dynatree/jquery.dynatree
 //= require_tree .
@@ -29,9 +30,9 @@ function add_fields(link, association, content) {
     $(link).parent().before(content.replace(regexp, new_id));
 }
 
-jQuery(function(){
-  jQuery("#tabs").tabs();
-});
+//jQuery(function(){
+//  jQuery("#tabs").tabs();
+//});
 
 function check_search_form(){
   if(document.forms[0]['search_key'].selectedIndex == 1 && 
